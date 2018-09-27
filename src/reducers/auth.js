@@ -23,8 +23,9 @@ export default function(state = initialState, action) {
             let newUser = {...action.payload};
             saveUser(newUser);
             return { ...state, fetching: false, user: newUser };
-
         case types.AUTH_FAILED:
             return { ...state, fetching: false };
+        default: 
+            return state;
     }
 }

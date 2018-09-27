@@ -1,5 +1,1 @@
-import * as auth from './auth';
-
-export default {
-    ...auth
-}
+export { default as auth } from './auth';
